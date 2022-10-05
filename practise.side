@@ -1,0 +1,245 @@
+{
+  "id": "7a77b6da-f4e9-4005-b26f-0445bc64792c",
+  "version": "2.0",
+  "name": "heroku",
+  "url": "http://automationpractice.com/index.php",
+  "tests": [{
+    "id": "41057957-9115-4d0d-b198-33eda2ba7659",
+    "name": "002 User Login",
+    "commands": [{
+      "id": "2e6ab192-e912-4f84-b934-368e80c3bfba",
+      "comment": "",
+      "command": "open",
+      "target": "https://the-internet.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "343f954a-17bc-467c-ae69-f8e3713ca2f9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Form Authentication",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38ce8f2d-ce17-4120-b090-5c168dc523ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca424248-f625-42b1-b5d1-09b0465b5733",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "tomsmith"
+    }, {
+      "id": "974ccf1d-8c4f-48b1-af11-458208b41d21",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac66d6cf-00f7-4ea0-b26b-37033997b2f2",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "SuperSecretPassword!"
+    }, {
+      "id": "37b8b2c4-ed7b-49fa-9d1c-42c35c772998",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa",
+      "targets": [
+        ["css=.fa", "css:finder"],
+        ["xpath=//form[@id='login']/button/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,' Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "abbfa600-a2bf-4b73-8293-7e018e0a1be4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.subheader",
+      "targets": [
+        ["css=.subheader", "css:finder"],
+        ["xpath=//div[@id='content']/div/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Welcome to the Secure Area. When you are done click logout below.')]", "xpath:innerText"]
+      ],
+      "value": "Welcome to the Secure Area. When you are done click logout below."
+    }, {
+      "id": "88e3eebd-6f7c-4e6f-9841-f582a1472fb4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.icon-2x",
+      "targets": [
+        ["css=.icon-2x", "css:finder"],
+        ["xpath=//div[@id='content']/div/a/i", "xpath:idRelative"],
+        ["xpath=//a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5d58398-3410-46cf-874e-c5275ee8975f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-2x",
+      "targets": [
+        ["css=.icon-2x", "css:finder"],
+        ["xpath=//div[@id='content']/div/a/i", "xpath:idRelative"],
+        ["xpath=//a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc12fdfd-4ea1-4bf0-acf1-8085b7747b36",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//div[@id='content']/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Login Page')]", "xpath:innerText"]
+      ],
+      "value": "Login Page"
+    }]
+  }, {
+    "id": "5cff1fdf-5fe1-4730-9e02-91aa99641a88",
+    "name": "003 Drop Down List",
+    "commands": []
+  }, {
+    "id": "65460dae-516c-4088-8b79-3169738e97bf",
+    "name": "001 Google Search",
+    "commands": [{
+      "id": "c0b3eae5-069b-4f59-922d-2227c4528581",
+      "comment": "Open Google",
+      "command": "open",
+      "target": "https://www.google.co.uk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53e3bbea-f2a9-4784-b67d-33357c83c5e4",
+      "comment": "Click Search field",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fe2bc86-ea58-4264-9aef-024f3ad9933c",
+      "comment": "Type Liverpool FC",
+      "command": "type",
+      "target": "name=q",
+      "targets": [],
+      "value": "Liverpool FC"
+    }, {
+      "id": "f9df3461-bc71-46db-9e9b-68af671cf48c",
+      "comment": "Press ENTER key to Search",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8b53d787-9b6c-4d7a-9274-7d4d9c2e51bd",
+      "comment": "Assert / Verify Search Result",
+      "command": "assertText",
+      "target": "css=#sports-app > div > div.imso-loa.imso-thor.QMSMXe.Wrsj9b > div > div > div.GLbw8e.q8U8x.imso-ani > div > div.S9Uogc > div.ofy7ae",
+      "targets": [],
+      "value": "Liverpool F.C."
+    }]
+  }, {
+    "id": "cf926b72-1a11-444d-8e6f-05816f4b6711",
+    "name": "004 AutoPractise",
+    "commands": [{
+      "id": "e8ad2fb6-a589-4047-b51d-320d7207270c",
+      "comment": "",
+      "command": "open",
+      "target": "http://automationpractice.com/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9753bd8-6c8a-4cd3-bc4a-fad7389dba8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#block_top_menu > ul > li:nth-child(2) > a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c2640f5-3160-4ced-8bac-16f7f8fc699c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#center_column > ul > li:nth-child(2) > div > div.right-block > div.button-container > a.button.ajax_add_to_cart_button.btn.btn-default > span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49356c51-d4d3-4c23-a95b-a8f9825f255f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#layer_cart > div.clearfix > div.layer_cart_product.col-xs-12.col-md-6 > h2",
+      "targets": [],
+      "value": "Product successfully added to your shopping cart"
+    }, {
+      "id": "3ce9dedb-298b-41d5-a315-b62ec9336278",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79d09a82-3011-4702-8109-4aca8e744fac",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a71ec55e-298a-4420-8d56-4a8e0dfd350f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["41057957-9115-4d0d-b198-33eda2ba7659"]
+  }],
+  "urls": ["https://the-internet.herokuapp.com/", "https://www.google.co.uk/", "http://automationpractice.com/index.php"],
+  "plugins": []
+}
